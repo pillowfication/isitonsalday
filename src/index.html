@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <title>Is it Onsal day?</title>
+    <meta property="og:title" content="Is it Onsal day?">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://isitonsalday.com/">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
     <style>
       html, body {
         width: 100vw;
@@ -24,7 +28,14 @@
   <body>
     <div id="answer"></div>
     <script>
-      document.getElementById('answer').innerHTML = 'YES'
+      // Get date in JST (UTC+9)
+      const now = Date.now() + 9 * 3600000
+      // Get days since
+      const days = Math.floor(now / 86400000)
+      // Check if today is Onsal day
+      const isOnsal = days % 4 === 2
+
+      document.getElementById('answer').innerHTML = isOnsal ? 'YES' : 'NO'
     </script>
   </body>
 </html>
