@@ -1,0 +1,26 @@
+{
+  "name": "isitonsalday",
+  "version": "0.0.0",
+  "description": "Is it Onsal day?",
+  "author": {
+    "name": "Markus Tran",
+    "email": "thebluepillow@gmail.com",
+    "url": "https://pillowfication.com"
+  },
+  "homepage": "https://isitonsalday.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pillowfication/isitonsalday.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pillowfication/isitonsalday/issues"
+  },
+  "scripts": {},
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-send": "^5.0.1"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
